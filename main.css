@@ -22,4 +22,25 @@ button {
   border: none;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  font-size: 25px;
+  letter-spacing: 10px;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 50%,
+    rgba(255, 255, 255, 0.03) 58%,
+    rgba(255, 255, 255, 0.16) 67%,
+    transparent 68%
+  );
 }
