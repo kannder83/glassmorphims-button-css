@@ -26,7 +26,9 @@ button {
   letter-spacing: 10px;
   backdrop-filter: blur(8px);
   cursor: pointer;
+  outline: none;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
 button::after {
@@ -43,4 +45,14 @@ button::after {
     rgba(255, 255, 255, 0.16) 67%,
     transparent 68%
   );
+  background-size: 200% 100%;
+  background-position: 165% 0;
+  transition: 0.7s;
+}
+button:hover::after{
+  background-position: -20% 0;
+}
+button:hover{
+  box-shadow: 15px 30px 32px rgba(0, 0, 0, 0.25);
+  transform: translateY(-10px);
 }
